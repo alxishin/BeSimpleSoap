@@ -59,7 +59,7 @@ class Curl
         if (!isset($options['user_agent'])) {
             $options['user_agent'] = self::USER_AGENT;
         }
-        if (!isset($options['timeout']) {
+        if (!isset($options['timeout'])) {
             $options['timeout'] = ini_get('default_socket_timeout');
         }
         $this->followLocationMaxRedirects = $followLocationMaxRedirects;
